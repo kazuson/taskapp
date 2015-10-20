@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taskapp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!--
+.レイアウトとしてlogo.pngを読み込んでいる
+.yieldにindex.htmlなどの文書が埋め込まれる
+.link toにページ繊維を作ることができる。
+-->
+<%= image_tag "logo.png" %>
+<%= yield %>
+<%= link_to "Home","/" %>
+
+</body>
+</html>
